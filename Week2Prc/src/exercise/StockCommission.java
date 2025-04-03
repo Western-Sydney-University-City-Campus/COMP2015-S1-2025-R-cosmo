@@ -24,6 +24,8 @@ public class StockCommission {
 		} else {
 			System.out.println("Invalid price input");
 		}
+		
+		sc.close();
 	}
 
 }

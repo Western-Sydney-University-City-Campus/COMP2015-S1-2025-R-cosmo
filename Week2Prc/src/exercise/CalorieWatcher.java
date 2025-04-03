@@ -15,6 +15,8 @@ public class CalorieWatcher {
 		} else {
 			System.out.println("Invalid cookie number");
 		}
+		
+		sc.close();
 	
 	}
 
