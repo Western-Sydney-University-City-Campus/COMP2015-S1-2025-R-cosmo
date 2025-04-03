@@ -7,14 +7,23 @@ public class StockCommission {
 		System.out.println("Enter the share price");
 		Scanner sc = new Scanner(System.in);
 		double price = sc.nextDouble();
-		System.out.println("Enter number of shares");
-		double shares = sc.nextDouble();
-		double cost = price * shares;
-		double commission = cost * 0.0425;
-		double total = cost + commission;
+		if (price > 0 && price <= 500) {
+			System.out.println("Enter number of shares");
+			int shares = sc.nextInt();
+			if (shares > 100 && shares < 100000) {
+				double cost = price * shares;
+				double commission = cost * 0.0425;
+				double total = cost + commission;
 		
-		System.out.println("stock cost : " + cost + "\nCommission: " + commission + "\nTotal: " + total);// TODO Auto-generated method stub
-
+				System.out.println("stock cost : " + cost + 
+						"\nCommission: " + commission +
+						"\nTotal: " + total);
+			} else {
+				System.out.println("Invalid shares input");
+			}// TODO Auto-generated method stub
+		} else {
+			System.out.println("Invalid price input");
+		}
 	}
 
 }
