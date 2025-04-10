@@ -1,3 +1,12 @@
+/**
+ * Student ID: 22122202
+ * Name: Leyuan Wang
+ * Campus: Sydney city campus
+ * Tutor Name: Chirs
+ * Class Day: March 14th
+ * Class Time: 5:30pm
+ */
+
 package exercise;
 import java.util.Scanner;
 
